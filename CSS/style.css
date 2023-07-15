@@ -1,0 +1,259 @@
+/* Common Css Start */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:0;
+  }
+  body{
+     font-family: 'Open Sans', sans-serif;
+     font-weight: 400;
+  }
+  h1,h2,h3,h4,h5,h6,a,button,b{
+     font-weight: 800;
+  }
+  ul{
+     list-style-type: none;
+  }
+  a{
+     text-decoration: none;
+     display: inline-block;
+  }
+  .container{
+     width: 1170px;
+     margin: 0 auto;
+  }
+  .row{
+     display: flex;
+    flex-wrap: wrap;
+  }
+  .text-center{
+     text-align: center;
+  }
+  .section-info h2{
+   font-size:46px ;
+   text-transform: uppercase;
+   color: #02918c;
+}
+.section-info p{
+   font-size: 16px;
+   line-height: 41px;
+   color: #7e8287;
+}
+.section-info p b{
+  font-size: 23px;
+}
+ /* Common Css End */
+/*nav css start*/
+nav{
+    background-color: #02918c;
+    position: sticky;
+    top: 0;
+   
+ }
+ nav .row{
+    justify-content: space-between;
+    align-items: center;
+ }
+ nav div ul li a{
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 60.12px;
+    padding: 0 25.5px;
+    transition: .5s;
+ }
+ nav div ul li a:hover{
+    background-color: #cfc91d;
+    color: #0b1016;
+ }
+/*nav css ended*/
+/* banner css start*/
+#banner{
+    background-image:linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.66)), url(./Image/banner_bg.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+ }
+ #banner .row{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+ #banner h4{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+ }
+ #banner h1{
+    font-size: 68px;
+    line-height: 75px;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+ }
+ #banner p{
+    font-size: 18px;
+    line-height: 33px;
+ }
+ #banner img{
+    display: block;
+    margin: 52px auto;
+ }
+ #banner a{
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0b1016;
+    background-color: #cfc91d;
+    padding: 15px 42px;
+ }
+/* banner css ended*/
+/*about css start*/
+#about{
+    padding: 98px;
+ }
+#about .section-info{
+    padding: 0 137px;
+    margin-bottom: 80px;
+}
+#about .about_box{
+    width: 25%;
+    padding: 36px 65px;
+    border-right: 1px solid #d9dbdb;
+    color: #7e8287;
+}
+#about .about_box:last-child{
+    border-right-color: transparent;
+}
+#about .about_box h3{
+    font-size: 16px;
+    line-height: 23px;
+}
+#about .about_box p{
+    font-size: 11px;
+    line-height: 21px;
+}
+/*about css ended*/
+/*service css start*/
+#service{
+    background-image: url(./../Image/Service_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#service .inner_container{
+    width: 50%;
+}
+#service h2{
+    padding-top: 74px;
+}
+#service .section-info{
+    padding-right: 90px;
+    margin-bottom: 60px;
+}
+#service .service_box{
+    width: 50%;
+    padding-right: 110px;
+    margin-bottom: 40px;
+    color: #7e8287;
+}
+#service .service_box h3{
+    margin: 21px o;
+    font-size: 16px;
+    line-height: 23px;
+}
+#service .service_box p{
+    font-size: 11px;
+    line-height: 21px;
+}
+/*service css ended*/
+/*mywork css start*/
+#mywork{
+    padding-top: 110px;
+}
+#mywork .section-info{
+    padding: 0 236px;
+    margin-bottom: 78px;
+}
+#mywork .mywork_box{
+    width: 25%;
+    position: relative;
+}
+#mywork .mywork_box img{
+    width: 100%;
+    display: block;
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(2,145,140,85%);
+    z-index: 99;
+    inset: 20px 28px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transform: scale(0);
+    transform-origin: left top;
+    transition: .5s;
+}
+.mywork_box:hover .overlay{
+    transform: scale(1);
+}
+.overlay h3{
+    margin: 21px o;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 58px 15px 0;
+}
+.overlay p{
+    font-size: 13px;
+    line-height: 21px;
+    padding: 0 51px 38px;
+}
+/*mywork css end*/
+/*contact me css start*/
+#contact_me h2{
+    padding-top: 100px;
+}
+#contact_me p{
+    padding: 0 237px ;
+}
+/*contact me css ended*/
+/*form css start*/
+.contactForm {
+	background: #0B0B0B;
+	color: #7D8186;
+	padding: 50px 25px;
+}
+.ped{
+   padding-top: 69px;
+}
+.contactForm input {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #7D8186;
+	text-align: center;
+	width: 637px;
+	font-size: 24px;
+	color:#7D8186;
+}
+
+.contactForm button {
+   font-size: 14px;
+   line-height: 30px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: #0b1016;
+   background-color: #cfc91d;
+   padding: 15px 42px;
+   margin-top: 68px;
+}
+.contactForm button:hover {
+	background-color: #fff; 
+	color: #0B1016;
+}
+.form{
+    background-color: #0B0B0B;
+    margin-top: 70px;
+}
+/*form css ended*/
